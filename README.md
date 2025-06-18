@@ -4,7 +4,7 @@ A simple Android application for recording and managing personal financial trans
 
 ## 📌 Summary
 
-**saKU** is a personal finance management app that helps users (particularly students) record income and expenses, view financial statistics across different time ranges, and receive daily reminders to log transactions. This project was developed as part of the **Mobile Software Programming Course Project** at Universitas Riau, completed collaboratively in a group.
+**saKU** is a personal finance management app that helps users (particularly students) record income and expenses, view financial statistics across different time ranges, and receive daily reminders to log transactions. This application was developed individually as part of a **Mid-Semester Assignment** for the **Mobile Software Programming Course Project** at Universitas Riau.
 
 ## ✨ Features
 
