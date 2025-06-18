@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">saKU</string>
+    <string name="add_transaction">Tambah Transaksi</string>
+    <string name="date">Tanggal</string>
+    <string name="select_date">Pilih tanggal</string>
+    <string name="nominal">Nominal</string>
+    <string name="rp">Rp</string>
+    <string name="enter_the_nominal">Masukkan nominal</string>
+    <string name="category">Kategori</string>
+    <string name="notes">Catatan</string>
+    <string name="write_a_note">Tulis catatan</string>
+    <string name="save">Simpan</string>
+    <string name="settings">Pengaturan</string>
+    <string name="notification">Notifikasi</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="daily_reminder_desc">Memberikan notifikasi pengingat catatan harian</string>
+    <string name="reminder_time">Waktu Pengingat</string>
+    <string name="time_desc">20:00</string>
+    <string name="select_time">Pilih waktu</string>
+    <string name="appearance">Tampilan</string>
+    <string name="dark_mode">Mode Gelap</string>
+    <string name="dark_mode_desc">Mengaktifkan mode gelap</string>
+    <string name="language">Bahasa</string>
+    <string name="select_language">Pilih bahasa</string>
+    <string name="data">Data</string>
+    <string name="delete_data">Hapus Data</string>
+    <string name="delete_data_desc">Hapus seluruh data pencatatan</string>
+    <string name="income">Pemasukan</string>
+    <string name="expense">Pengeluaran</string>
+    <string name="select_category">-- Pilih Kategori --</string>
+    <string name="edit">Edit</string>
+    <string name="detail_transaction">Detail Transaction</string>
+    <string name="delete_data_confirmation">Apakah Anda yakin ingin menghapus semua data transaksi? Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="delete_data_success">Semua data transaksi telah dihapus</string>
+    <string name="delete_data_error">Gagal menghapus data</string>
+    <string name="daily_reminder_notification">Jangan lupa catat transaksi keuangan Anda hari ini!</string>
+    <string name="notification_permission_denied">Izin pemberitahuan ditolak</string>
+
+    <string name="delete_transaction_title">Hapus Transaksi</string>
+    <string name="delete_transaction_message">Apakah Anda yakin ingin menghapus transaksi ini?</string>
+    <string name="cancel">Batal</string>
+
+    <string name="error_empty_date">Tanggal tidak boleh kosong</string>
+    <string name="error_empty_amount">Nominal tidak boleh kosong</string>
+    <string name="error_category_required">Kategori harus dipilih</string>
+
+    <string name="success_save_transaction">Transaksi berhasil disimpan</string>
+
+    <string name="tab_all">Semua</string>
+    <string name="tab_today">Hari Ini</string>
+    <string name="tab_month">Bulan Ini</string>
+    <string name="tab_year">Tahun Ini</string>
+    <string name="filter_applied">Filter diterapkan</string>
+    <string name="invalid_date_format">Format tanggal tidak valid</string>
+
+    <string name="toast_filter_applied">Filter diterapkan: %1$s - %2$s, Tipe: %3$s</string>
+    <string name="toast_invalid_date_format">Format tanggal tidak valid</string>
+
+    <string name="statistics">Statistik</string>
+    <string name="total_income">Total Pemasukan</string>
+    <string name="total_expenditure">Total Pengeluaran</string>
+    <string name="difference">Selisih</string>
+    <string name="last_history">History Terakhir</string>
+
+    <string name="filter_title">Filter Kustom</string>
+    <string name="close_button_desc">Tutup</string>
+    <string name="date_range_title">Rentang Tanggal</string>
+    <string name="start_date_hint">Dari</string>
+    <string name="end_date_hint">Sampai</string>
+    <string name="transaction_type_title">Jenis Transaksi</string>
+    <string name="transaction_all">Semua</string>
+    <string name="transaction_income">Pemasukan</string>
+    <string name="transaction_expense">Pengeluaran</string>
+    <string name="apply_filter">Terapkan Filter</string>
+
+    <string name="developed_by">Develop by Agus Syuhada</string>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/add_transaction"
+        app:titleTextAppearance="@style/ToolbarTitleStyle"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:clipToPadding="false"
+        android:scrollbarThumbVertical="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tanggal -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textAppearance="@style/TextAppearance.SaKU.FormLabel"
+                android:layout_marginBottom="8dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/edittext_border"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/etTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/textPrimary"
+                    android:hint="@string/select_date"
+                    android:focusable="false"
+                    android:background="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/ivCalendar"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_calendar"
+                    android:tint="@color/colorPrimary"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="12dp"/>
+            </FrameLayout>
+
+            <!-- Nominal -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nominal"
+                android:textAppearance="@style/TextAppearance.SaKU.FormLabel"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rp"
+                    android:textSize="16sp"
+                    android:textColor="@color/textPrimary"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="8dp"/>
+
+                <EditText
+                    android:id="@+id/etNominal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:textColor="@color/textPrimary"
+                    android:padding="14dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_the_nominal"
+                    android:textColorHint="@color/textHint"/>
+            </LinearLayout>
+
+            <!-- Kategori -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category"
+                android:textAppearance="@style/TextAppearance.SaKU.FormLabel"
+                android:layout_marginBottom="8dp"/>
+
+            <FrameLayout
+                android:id="@+id/spinnerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/edittext_border"
+                android:layout_marginBottom="16dp">
+
+                <Spinner
+                    android:id="@+id/spinnerKategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="48dp"
+                    android:backgroundTint="@color/transparent"
+                    android:popupBackground="@drawable/spinner_popup_background"
+                    android:overlapAnchor="false" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_dropdown"
+                    android:tint="@color/colorPrimary"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="12dp"/>
+            </FrameLayout>
+
+            <!-- Catatan -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notes"
+                android:textAppearance="@style/TextAppearance.SaKU.FormLabel"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etCatatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:minHeight="120dp"
+                android:background="@drawable/edittext_border"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:textColor="@color/textPrimary"
+                android:gravity="top"
+                android:hint="@string/write_a_note"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Tombol Simpan -->
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                style="@style/Widget.SaKU.Button"
+                android:text="@string/save"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
